@@ -2,6 +2,7 @@
 
 MOUSEKEY_ENABLE = yes # Mouse keys
 EXTRAKEY_ENABLE = yes # Audio control and System control
+EXTENDED_THUMB_CLUSTER = yes
 
 SRC += manna-harbour_miryoku.c # keymap
 
