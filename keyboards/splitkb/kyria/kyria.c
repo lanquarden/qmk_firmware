@@ -44,28 +44,36 @@ bool oled_task_kb(void) {
         oled_write_P(PSTR("rev3\n\n"), false);
 #endif
         // Host Keyboard Layer Status
-        oled_write_P(PSTR("Layer: "), false);
         switch (get_highest_layer(layer_state | default_layer_state)) {
             case 0:
-                oled_write_P(PSTR("QWERTY\n"), false);
+                oled_write_P(PSTR("Base: Colemak-DH\n"), false);
                 break;
             case 1:
-                oled_write_P(PSTR("Dvorak\n"), false);
+                oled_write_P(PSTR("Extra: Qwerty\n"), false);
                 break;
             case 2:
-                oled_write_P(PSTR("Colemak-DH\n"), false);
+                oled_write_P(PSTR("Tap: Colemak-DH\n"), false);
                 break;
             case 3:
-                oled_write_P(PSTR("Nav\n"), false);
+                oled_write_P(PSTR("Layer: Button\n"), false);
                 break;
             case 4:
-                oled_write_P(PSTR("Sym\n"), false);
+                oled_write_P(PSTR("Layer: Nav\n"), false);
                 break;
             case 5:
-                oled_write_P(PSTR("Function\n"), false);
+                oled_write_P(PSTR("Layer: Mouse\n"), false);
                 break;
             case 6:
-                oled_write_P(PSTR("Adjust\n"), false);
+                oled_write_P(PSTR("Layer: Media\n"), false);
+                break;
+            case 7:
+                oled_write_P(PSTR("Layer: Num\n"), false);
+                break;
+            case 8:
+                oled_write_P(PSTR("Layer: Sym\n"), false);
+                break;
+            case 9:
+                oled_write_P(PSTR("Layer: Fun\n"), false);
                 break;
             default:
                 oled_write_P(PSTR("Undefined\n"), false);
