@@ -5,3 +5,16 @@
 
 #pragma once
 
+// Custom layer mapping using more of the kyria in the TAP layer
+
+#define MIRYOKU_LAYERMAPPING_TAP( \
+    K00, K01, K02, K03, K04,           K05, K06, K07, K08, K09, \
+    K10, K11, K12, K13, K14,           K15, K16, K17, K18, K19, \
+    K20, K21, K22, K23, K24,           K25, K26, K27, K28, K29, \
+    N30, N31, K32, K33, K34,           K35, K36, K37, N38, N39 \
+) \
+KC_TAB   K00 K01 K02  K03  K04                    K05 K06 K07 K08 K09 U_BASE \
+KC_LSFFT K10 K11 K12  K13  K14                    K15 K16 K17 K18 K19 XXX \
+KC_LCTL  K20 K21 K22  K23  K24  KC_5 KC_6 XXX XXX K25 K26 K27 K28 K29 KC_ESC \
+                 KC_1 KC_2 KC_3 K33  KC_4 K35 K36 K37 XXX XXX
+#endif
