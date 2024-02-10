@@ -14,9 +14,9 @@
     N30, N31, K32, K33, K34,                          K35, K36, K37, N38, N39 \
 ) \
 LAYOUT( \
-    KC_TAB,  K00, K01, K02,  K03,  K04,                             K05, K06, K07, K08, K09, U_BASE, \
-    KC_LSFT, K10, K11, K12,  K13,  K14,                             K15, K16, K17, K18, K19, XXX, \
-    KC_LCTL, K20, K21, K22,  K23,  K24,  KC_5, KC_6,      XXX, XXX, K25, K26, K27, K28, K29, KC_ESC, \
-                       KC_1, KC_2, KC_3, K33,  KC_4,      K35, K36, K37, XXX, XXX \
+    KC_TAB,  K00, K01, K02,   K03,   K04,                                K05, K06, K07, K08, K09, TO(U_BASE), \
+    KC_LSFT, K10, K11, K12,   K13,   K14,                                K15, K16, K17, K18, K19, XXX, \
+    KC_LCTL, K20, K21, K22,   K23,   K24,   KC_F5, KC_F6,      XXX, XXX, K25, K26, K27, K28, K29, KC_ESC, \
+                       KC_F1, KC_F2, KC_F3, K33,   KC_F4,      K35, K36, K37, XXX, XXX \
 )
 #endif
